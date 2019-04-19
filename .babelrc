@@ -1,0 +1,15 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react",
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "alias": {
+        "root": "./",
+        "frontend": "./src/frontend",
+        "backend": "./src/backend"
+      }
+    }]
+  ]
+}

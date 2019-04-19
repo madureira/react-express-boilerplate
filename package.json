@@ -1,0 +1,51 @@
+{
+  "name": "react-express-boilerplate",
+  "description": "This is a full stack webapp boilerplate project with ReactJS and ExpressJS.",
+  "version": "1.0.0",
+  "author": "Rafael Madureira dos Santos",
+  "main": "src/backend/index.js",
+  "scripts": {
+    "start": "npm run build && NODE_ENV=production node src/backend/index.js",
+    "dev": "nodemon --exec node src/backend/index.js",
+    "build": "NODE_ENV=production webpack --mode=production",
+    "prettier": "prettier --write {src,__tests__}/**/*.js",
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/polyfill": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.4.0",
+    "axios-mock-adapter": "^1.16.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.7.1",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-import-resolver-babel-module": "^5.0.1",
+    "eslint-import-resolver-webpack": "^0.11.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "jest": "^24.7.1",
+    "nodemon": "^1.18.11",
+    "prettier": "^1.17.0",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-middleware": "^3.6.2",
+    "webpack-hot-middleware": "^2.24.3"
+  },
+  "browserslist": "> 0.25%, not dead"
+}
